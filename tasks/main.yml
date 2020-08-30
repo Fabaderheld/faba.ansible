@@ -1,2 +1,10 @@
 ---
 # tasks file for faba.ansible
+
+- name: "Copy Ansible Config"
+  copy:
+    src: ansible.cfg
+    dest: /etc/ansible.cfg
+    owner: root
+    group: root
+    mode: '0644'
